@@ -46,7 +46,7 @@ YAML
 ########################################
 run 'rm -rf app/assets/stylesheets'
 run 'rm -rf vendor'
-run 'curl -L https://github.com/ephemeair/stylesheets/archive/master.zip > stylesheets.zip'
+run 'curl -L https://github.com/EphemeAir/stylesheets/archive/master.zip > stylesheets.zip'
 run 'unzip stylesheets.zip -d app/assets && rm stylesheets.zip && mv app/assets/rails-stylesheets-master app/assets/stylesheets'
 
 run 'rm app/assets/javascripts/application.js'
@@ -103,13 +103,13 @@ file 'app/views/shared/_flashes.html.erb', <<-HTML
 <% end %>
 HTML
 
-run 'curl -L https://github.com/ephemeair/awesome-navbars/raw/master/templates/_navbar_ea.html.erb > app/views/shared/_navbar.html.erb'
-run 'curl -L https://raw.githubusercontent.com/ephemeair/rails-templates/master/logo.png > app/assets/images/logo.png'
+run 'curl -L https://github.com/EphemeAir/awesome-navbars/raw/master/templates/_navbar_ea.html.erb > app/views/shared/_navbar.html.erb'
+run 'curl -L https://raw.githubusercontent.com/EphemeAir/rails-templates/master/logo.png > app/assets/images/logo.png'
 
 # README
 ########################################
 markdown_file_content = <<-MARKDOWN
-Rails app generated with [ephemeair/rails-templates](https://github.com/ephemeair/rails-templates), created by the [EAir] team.
+Rails app generated with [EphemeAir/rails-templates](https://github.com/EphemeAir/rails-templates), created by the [EAir] team.
 MARKDOWN
 file 'README.md', markdown_file_content, force: true
 
@@ -226,7 +226,7 @@ JS
 
   # Rubocop
   ########################################
-  run 'curl -L https://raw.githubusercontent.com/ephemeair/rails-templates/master/.rubocop.yml > .rubocop.yml'
+  run 'curl -L https://raw.githubusercontent.com/EphemeAir/rails-templates/master/.rubocop.yml > .rubocop.yml'
 
   # Git
   ########################################
